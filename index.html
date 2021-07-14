@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>User Page</title>
+</head>
+
+<body>
+    <div class="formBox">
+
+        <div class="container hide" id="signIn">
+            <h1 class="display-3">Sign In</h1>
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-12">
+                    <input type="email" class="form-control" id="email">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-12">
+                    <input type="password" class="form-control" id="password">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-warning" onclick="signIn()">Sign in</button>
+            <button type="submit" class="btn btn-danger mt-3" onclick="showSignUp()">Sign Up</button>
+        </div>
+
+        <div class="container" id="signUp">
+            <h1 class="display-3">Sign Up</h1>
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-5 col-form-label">User Name</label>
+                <div class="col-12">
+                    <input type="text" class="form-control" id="userName">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-12">
+                    <input type="email" class="form-control" id="email1">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-12">
+                    <input type="password" class="form-control" id="password1">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-warning" onclick="signUp()">Sign Up</button>
+            <button type="submit" class="btn btn-danger mt-3" onclick="showSignIn()">Sign In</button>
+        </div>
+
+    </div>
+
+    <!-- js link -->
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
